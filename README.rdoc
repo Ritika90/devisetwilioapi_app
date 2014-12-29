@@ -1,28 +1,39 @@
-== README
+Thi project is related to creating a backend for applications.
+It offers an api with the devise and twilio  functionalities from
+the backend.
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+1). Creating New User
 
-Things you may want to cover:
+    curl -X POST -H "Content-type: application/json" -d '{"user":{"firstname":"firstname","lastname":"lastname","email":"Email-ID","phone":"Phone Number","password":"your_password","password_confirmation":"your_password","status":"email/message"}}' http://your_host/users
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+                                                                  X----------------------------------X
 
 
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+2). User Sign_In
+
+    curl -X POST -H "Content-type: application/json" -d '{"user":{"email":"your_email_id","password":"your_password"}}' http://your_host/users/sign_in
+
+                                                                  X----------------------------------X
+
+
+3). User Sign_Out
+
+    curl -i -H "Accept: application/json" -H "Content-type: application/json"  -H "email:your_email_id" -X DELETE http://your_host/users/sign_out
+
+                                                                  X----------------------------------X
+
+
+3). User Account Confirmation By Email
+
+    curl -X GET -H "Content-type: application/json" -d '{"user":{"email":"your_email_id","password":"your_password"}}' http://link of confirmation token
+
+                                                                   X----------------------------------X
+
+
+4). User Account Confirmation By Message
+
+    curl -X POST -H "Content-type: application/json" -d '{"user":{"email":"your_email_id","password":"your_password","otp":"otp"}}' http://your_host/api/v1/twilio/otp_conf
+
+                                                                  X----------------------------------X
+
+
