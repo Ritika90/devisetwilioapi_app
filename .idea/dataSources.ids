@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component name="dataSourceStorage">
+  <data-source source="LOCAL" name="Rails devisetwilioapi_app: development" uuid="97913857-41eb-48cf-ba13-f92d54b435de">
+    <database-info product="" version="" jdbc-version="" driver-name="" driver-version=""/>
+  </data-source>
+  <data-source source="LOCAL" name="Rails devisetwilioapi_app: test" uuid="f8ef4419-ef72-4a59-bd68-7811b8f41ee1">
+    <database-info product="" version="" jdbc-version="" driver-name="" driver-version=""/>
+  </data-source>
+  <data-source source="LOCAL" name="Rails devisetwilioapi_app: production" uuid="6c8fa876-c078-46c6-bbd3-316495ffa7b5">
+    <database-info product="" version="" jdbc-version="" driver-name="" driver-version=""/>
+  </data-source>
+</component>
